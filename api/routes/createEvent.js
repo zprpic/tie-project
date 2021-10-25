@@ -1,4 +1,4 @@
-const createEventService = require("../../services/createEvent");
+const { createEventService } = require("../../services/index");
 
 const createEvent = async (req, res) => {
   const event = await createEventService(req.body);
